@@ -34,7 +34,7 @@
                     <td>diproses</td>
                     <td>
                         <button type="button" class="btn btn-info">Detail</button>
-                        <button type="button" class="btn btn-danger">Hapus</button>
+                        <button type="button" class="btn btn-danger">Batalkan</button>
                     </td>
 
                     </tr>

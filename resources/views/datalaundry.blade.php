@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="mesin-cuci.png">
+    <title>Data</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1 class="text-center mt-3">Data Laundry</h1>
 
-    <div class="container">
+
+    <div class="container" style="margin-top: 50px;">
         <div class="row">
             <table class="table">
                 <thead>
@@ -18,33 +20,93 @@
                         <th>Customer</th>
                         <th>Berat</th>
                         <th>Tanggal Masuk</th>  
-                        <th>Harga Total</th>
+                        <th>Total</th>
                         <th>Status</th>
-                        <th>Aksi</th>
+                        <th></th>
                         
                      </tr>
                 </thead>
                 <tbody>
+                    @foreach ($data as $laundry)
                     <tr>
-                    <th scope="row">1</th>
-                    <td>Agus</td>
-                    <td>2.8 Kg</td>
-                    <td>12/12/24</td>
-                    <td>15.000</td>
-                    <td>diproses</td>
+                    <th scope="row">{{ $laundry->id }}</th>
+                    <td>{{ $laundry->nama_customer }}</td>
+                    <td>{{ $laundry->berat }}.Kg</td>
+                    <td>{{ $laundry->tanggal_masuk }}</td>
+                    <td>{{ $laundry->harga_total }}</td>
+                    <td>{{ $laundry->status }}</td>
                     <td>
-                        <button type="button" class="btn btn-info">Detail</button>
-                        <button type="button" class="btn btn-danger">Batalkan</button>
+                        <form action="{{route('hapus-laundry', $laundry->id)}}" method="post">
+                            @csrf
+                            {{method_field('delete')}}
+                            <button type="submit" class="btn btn-danger">Batalkan</button>
+                        </form>
+                        
                     </td>
 
                     </tr>
+                    @endforeach
 
 
                 </tbody>
                
             </table>
-            <button type="button" class="btn btn-success">Tambah Data</button>
         </div>
+
+        <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success" style="width: 100%;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Tambah Data
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Siapa Nih Yang Laundry??</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <form method="post">
+                @csrf
+                <!-- {{method_field('PUT')}} -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                                <label>Nama Customer</label>
+                                <input type="text" name="#"  required class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Berat Pakaian</label>
+                                <input type="number" name="#" required class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Harga</label>
+                                <input type="number" name="#" required class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                                <label>Tanggal Masuk</label>
+                                <input type="date" name="#"  required class="form-control">
+                            </div>
+                        </div>
+                </div>
+                
+            </form>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-secondary" style="width: 90%; margin-bottom: 20px; margin-left: 25px;">Gaskeun</button>
+                </div>
+                </div>
+            </div>
+            </div>
         
     </div>
 </body>

@@ -21,7 +21,7 @@ return new class extends Migration
             $table->date('tanggal_diambil')->nullable();
             $table->timestamps();
         });
-    }
+    }   
 
     /**
      * Reverse the migrations.

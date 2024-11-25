@@ -11,5 +11,6 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-//Laundry
+//CRUD LAUNDRY
 Route::get('/laundry',[LaundryController::class, 'index'])->name('laundry');
+Route::delete('hapus-laundry/{param}', [LaundryController::class, 'delete'])->name('hapus-laundry');

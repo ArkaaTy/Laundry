@@ -12,6 +12,6 @@ class Laundry extends Model
     protected $table = 'pesanan';
 
     protected $fillable = [
-        'nama_customer', 'berat', 'tanggal_masuk', 'harga_total', 'status', 'tanggal_diambil',
+        'nama_customer', 'berat', 'tanggal_masuk', 'harga_total', 'status', 'tanggal_diambil', 'image'
     ];
 }

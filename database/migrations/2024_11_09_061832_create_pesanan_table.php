@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('pesanan', function (Blueprint $table) {
             $table->id();
             $table->string('nama_customer');
+            $table->string('image');
             $table->integer('berat');
             $table->date('tanggal_masuk');
             $table->string('harga_total');

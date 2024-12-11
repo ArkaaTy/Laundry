@@ -40,8 +40,8 @@ class LaundryController extends Controller
         // return back();  
        }
 
-       public function munir(){
-        $data = Laundry::all();
+       public function detail($id){
+        $data = Laundry::find($id);
         return view('detail', compact('data'));
        }
     

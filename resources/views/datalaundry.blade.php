@@ -44,7 +44,7 @@
                         <td>Rp. {{ number_format($laundry->harga_total) }}</td>
                         <td>{{ $laundry->status }}</td>
                         <td>
-                            <form action="{{route('detail-laundry')}}" style="margin-bottom: 6px;">
+                            <form action="{{route('detail-laundry', $laundry->id)}}" style="margin-bottom: 6px;">
                                 <button class="btn btn-success" style="width: 100px;">
                                     Detail
                                 </button>

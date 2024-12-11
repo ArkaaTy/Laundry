@@ -6,6 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>ler</h1>
+
+@foreach ($data as $laundry)
+    <div>
+        <img src="{{asset('storage/images/pesanan' .$laundry->image) }}" style="width: 100px;" alt="">
+    </div>
+@endforeach
+
 </body>
 </html>

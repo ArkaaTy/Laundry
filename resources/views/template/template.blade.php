@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="{{asset('assets/img/basic/favicon.ico')}}" type="image/x-icon">
-    <title>Paper</title>
+    <title>Laundry-Ku!</title>
     <!-- CSS -->
     <link rel="stylesheet" href="{{asset('assets/css/app.css')}}">
 
@@ -194,220 +194,7 @@
                                     <span class="badge r-3 badge-success">A</span>
                                 </li>
                                 <!-- Single contact -->
-                                <li class="my-1">
-                                    <div class="card no-b p-3">
-                                        <div class="">
-
-                                            <div class="image mr-3  float-left">
-                                                <img class="w-40px" src="assets/img/dummy/u1.png" alt="User Image">
-                                            </div>
-                                            <div>
-                                                <div>
-                                                    <strong>Alexander Pierce</strong>
-                                                </div>
-                                                <small> alexander@paper.com</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="my-1">
-                                    <div class="card no-b p-3">
-                                        <div class="">
-
-                                            <div class="image mr-3  float-left">
-                                                <img class="w-40px" src="assets/img/dummy/u6.png" alt="User Image">
-                                            </div>
-                                            <div>
-                                                <div>
-                                                    <strong>Alexander Pierce</strong>
-                                                </div>
-                                                <small> alexander@paper.com</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="my-1">
-                                    <div class="card no-b p-3">
-                                        <div class="">
-
-                                            <div class="image mr-3  float-left">
-                                                <img class="w-40px" src="assets/img/dummy/u6.png" alt="User Image">
-                                            </div>
-                                            <div>
-                                                <div>
-                                                    <strong>Alexander Pierce</strong>
-                                                </div>
-                                                <small> alexander@paper.com</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <ul class="list-unstyled">
-                                <li class="pt-3 pb-3 sticky p-3 b-b white">
-                                    <span class="badge r-3 badge-danger">B</span>
-                                </li>
-                                <li class="my-1">
-                                    <div class="card no-b p-3">
-                                        <div class="">
-
-                                            <div class="image mr-3  float-left">
-                                                <img class="w-40px" src="assets/img/dummy/u2.png" alt="User Image">
-                                            </div>
-                                            <div>
-                                                <div>
-                                                    <strong>Alexander Pierce</strong>
-                                                </div>
-                                                <small> alexander@paper.com</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="my-1">
-                                    <div class="card no-b p-3">
-                                        <div class="">
-
-                                            <div class="image mr-3  float-left">
-                                                <img class="w-40px" src="assets/img/dummy/u3.png" alt="User Image">
-                                            </div>
-                                            <div>
-                                                <div>
-                                                    <strong>Alexander Pierce</strong>
-                                                </div>
-                                                <small> alexander@paper.com</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="my-1">
-                                    <div class="card no-b p-3">
-                                        <div class="">
-
-                                            <div class="image mr-3  float-left">
-                                                <img class="w-40px" src="assets/img/dummy/u4.png" alt="User Image">
-                                            </div>
-                                            <div>
-                                                <div>
-                                                    <strong>Alexander Pierce</strong>
-                                                </div>
-                                                <small> alexander@paper.com</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <ul class="list-unstyled">
-                                <!-- Alphabet with number of contacts -->
-                                <li class="pt-3 pb-3 sticky p-3 b-b white">
-                                    <span class="badge r-3 badge-success gradient">C</span>
-                                </li>
-                                <!-- Single contact -->
-                                <li class="my-1">
-                                    <div class="card no-b p-3">
-                                        <div class="">
-
-                                            <div class="image mr-3  float-left">
-                                                <img class="w-40px" src="assets/img/dummy/u1.png" alt="User Image">
-                                            </div>
-                                            <div>
-                                                <div>
-                                                    <strong>Alexander Pierce</strong>
-                                                </div>
-                                                <small> alexander@paper.com</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="my-1">
-                                    <div class="card no-b p-3">
-                                        <div class="">
-
-                                            <div class="image mr-3  float-left">
-                                                <img class="w-40px" src="assets/img/dummy/u6.png" alt="User Image">
-                                            </div>
-                                            <div>
-                                                <div>
-                                                    <strong>Alexander Pierce</strong>
-                                                </div>
-                                                <small> alexander@paper.com</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="my-1">
-                                    <div class="card no-b p-3">
-                                        <div class="">
-
-                                            <div class="image mr-3  float-left">
-                                                <img class="w-40px" src="assets/img/dummy/u6.png" alt="User Image">
-                                            </div>
-                                            <div>
-                                                <div>
-                                                    <strong>Alexander Pierce</strong>
-                                                </div>
-                                                <small> alexander@paper.com</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="my-4">
-                                    <span class="badge r-3 badge-danger purple">D</span>
-                                </li>
-                                <li class="my-1">
-                                    <div class="card no-b p-3">
-                                        <div class="">
-
-                                            <div class="image mr-3  float-left">
-                                                <img class="w-40px" src="assets/img/dummy/u2.png" alt="User Image">
-                                            </div>
-                                            <div>
-                                                <div>
-                                                    <strong>Alexander Pierce</strong>
-                                                </div>
-                                                <small> alexander@paper.com</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="my-1">
-                                    <div class="card no-b p-3">
-                                        <div class="">
-
-                                            <div class="image mr-3  float-left">
-                                                <img class="w-40px" src="assets/img/dummy/u3.png" alt="User Image">
-                                            </div>
-                                            <div>
-                                                <div>
-                                                    <strong>Alexander Pierce</strong>
-                                                </div>
-                                                <small> alexander@paper.com</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="my-1">
-                                    <div class="card no-b p-3">
-                                        <div class="">
-
-                                            <div class="image mr-3  float-left">
-                                                <img class="w-40px" src="assets/img/dummy/u4.png" alt="User Image">
-                                            </div>
-                                            <div>
-                                                <div>
-                                                    <strong>Alexander Pierce</strong>
-                                                </div>
-                                                <small> alexander@paper.com</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                            
 </aside>
 
 <div class="has-sidebar-left">
@@ -441,7 +228,7 @@
         </div>
     </header>
     <div class="container-fluid my-3">
-        <p>Laundry Kepercayaan anda</p>
+        <p>Your Trusted Laundry.</p>
     </div>
 </div>
 <!-- Right Sidebar -->

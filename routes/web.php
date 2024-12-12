@@ -18,3 +18,5 @@ Route::get('/laundry',[LaundryController::class, 'index'])->name('laundry');
 Route::delete('hapus-laundry/{param}', [LaundryController::class, 'delete'])->name('hapus-laundry');
 Route::post('kirim-laundry', [LaundryController::class, 'store'])->name('kirim-laundry');
 Route::get('/detail/{id}', [LaundryController::class, 'detail'])->name('detail-laundry');
+
+Route::view('tampilan', 'template.template');

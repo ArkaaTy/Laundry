@@ -6,9 +6,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="{{asset('assets/img/basic/favicon.ico')}}" type="image/x-icon">
-    <title>Laundry-Ku!</title>
+    <title>LaundryKu!</title>
     <!-- CSS -->
     <link rel="stylesheet" href="{{asset('assets/css/app.css')}}">
+
 
 </head>
 <body class="light sidebar-mini sidebar-collapse">
@@ -69,9 +70,9 @@
                        aria-controls="v-pills-home" aria-selected="true"><i class="icon-inbox2"></i></a>
                     <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
                        aria-controls="v-pills-profile" aria-selected="false"><i class="icon-add"></i></a>
-                    <a class="nav-link blink skin_handle"  href="#"><i class="icon-lightbulb_outline"></i></a>
-                    <a class="nav-link" id="v-pills-messages-tab" href="#"><i class="icon-message"></i></a>
-                    <a class="nav-link" id="v-pills-settings-tab" href="#"><i class="icon-settings"></i></a>
+                    <a class="nav-link  skin_handle"  href="#"><i class="icon-lightbulb_outline"></i></a>
+                    <!-- <a class="nav-link" id="v-pills-messages-tab" href="#"><i class="icon-message"></i></a> -->
+                    <!-- <a class="nav-link" id="v-pills-settings-tab" href="#"><i class="icon-settings"></i></a> -->
                     <a href="">
                         <figure class="avatar">
                             <img src="assets/img/dummy/u3.png" alt="">
@@ -88,39 +89,30 @@
                             <div class="text-xs-center">
                                 <span class="font-weight-lighter s-18">Menu</span>
                             </div>
-                            <div class="badge badge-danger r-0">New Panel</div>
+                            
                         </div>
                     </div>
                     <ul class="sidebar-menu">
                         <li class="treeview">
-                            <a href="index.html">
-                            <i class="icon icon-sailing-boat-water s-24"></i> <span>Dashboard</span>
+                            <a href="{{route('laundry')}}">
+                            <i class="icon icon-sailing-boat-water s-24"></i> <span>Tambah Data</span>
                             </a>
                         </li>
-                        <li class="treeview"><a href="#">
+                        <li class="treeview"><a href="">
                             <i class="icon icon icon-package s-24"></i>
                             <span>Products</span>
-                            <span class="badge r-3 badge-primary pull-right">4</span>
                         </a>
                             <ul class="treeview-menu">
-                                <li><a href="panel-page-products.html"><i class="icon icon-circle-o"></i>All
-                                    Products</a>
+                                <li><a href="{{route('data')}}"><i class="icon icon-circle-o"></i>
+                                Semua Data
+                            </a>
                                 </li>
-                                <li><a href="panel-page-products-create.html"><i class="icon icon-add"></i>Add
-                                    New </a>
+                                <li><a href="{{route('laundry')}}"><i class="icon icon-circle-o"></i>
+                                Tambah Data
+                            </a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="treeview"><a href="#"><i class="icon icon-account_box s-24"></i>Users<i
-                                class=" icon-angle-left  pull-right"></i></a>
-                            <ul class="treeview-menu">
-                                <li><a href="panel-page-users.html"><i class="icon icon-circle-o"></i>All Users</a>
-                                </li>
-                                <li><a href="panel-page-users-create.html"><i class="icon icon-add"></i>Add User</a>
-                                </li>
-                                <li><a href="panel-page-profile.html"><i class="icon icon-user"></i>User Profile </a>
-                                </li>
-                            </ul>
                  
                      
                         <li class="treeview">
@@ -215,21 +207,21 @@
     <i></i>
 </a>
 <div class="has-sidebar-left has-sidebar-tabs">
-    <header class="my-3">
+    <header class="my-3 pl-5">
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <h1 class="s-24">
-                        <i class="icon-pages"></i>
-                        @yield('page-title') <span class="s-14">Laundry-Ku</span>
-                    </h1>
+                    <h2 class="s-24">
+                        <i class=""></i>
+                        @yield('page-title') <span class="font-extrabold">
+                            <h3>LaundryKu!</h3>
+                        </span>
+                    </h2>
                 </div>
             </div>
         </div>
     </header>
-    <div class="container-fluid my-3">
-        <p>Your Trusted Laundry.</p>
-    </div>
+
 </div>
 <!-- Right Sidebar -->
 <aside class="control-sidebar fixed white ">

@@ -14,6 +14,13 @@ class LaundryController extends Controller
          return view('datalaundry', compact('data'));
     }
 
+
+    public function create()
+    {
+        $data = Laundry::all();
+        return view('data', compact('data'));
+    }
+
     public function store(Request $request){
 
         //variabel dibawah untuk memanggil data yang disimpan di Request
